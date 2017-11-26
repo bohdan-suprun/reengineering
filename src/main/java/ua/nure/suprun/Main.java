@@ -2,6 +2,7 @@ package ua.nure.suprun;
 
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class Main {
 
@@ -22,5 +23,7 @@ public class Main {
         System.out.println(100 * (result.getSystemCost() - 1172.84) / result.getSystemCost());
 
 
+        Pattern p = Pattern.compile("\\w{4}", Pattern.UNICODE_CHARACTER_CLASS);
+        System.out.println(p.matcher("шапка").find());
     }
 }
