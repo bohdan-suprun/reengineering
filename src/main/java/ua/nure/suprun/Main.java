@@ -23,7 +23,7 @@ public class Main {
         System.out.println(100 * (result.getSystemCost() - 1172.84) / result.getSystemCost());
 
 
-        Pattern p = Pattern.compile("\\w{4}", Pattern.UNICODE_CHARACTER_CLASS);
+        Pattern p = Pattern.compile("(?U)\\w{4}");
         System.out.println(p.matcher("шапка").find());
     }
 }
